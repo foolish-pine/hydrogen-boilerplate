@@ -10,7 +10,6 @@
     "typecheck": "tsc --noEmit",
     "codegen": "shopify hydrogen codegen"
   },
-  "prettier": "@shopify/prettier-config",
   "dependencies": {
     "@remix-run/react": "^2.10.1",
     "@remix-run/server-runtime": "^2.10.1",
