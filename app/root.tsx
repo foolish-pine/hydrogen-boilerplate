@@ -1,21 +1,22 @@
-import {useNonce, getShopAnalytics, Analytics} from '@shopify/hydrogen';
-import {defer, type LoaderFunctionArgs} from '@shopify/remix-oxygen';
 import {
+  isRouteErrorResponse,
   Links,
   Meta,
   Outlet,
   Scripts,
+  ScrollRestoration,
+  type ShouldRevalidateFunction,
   useRouteError,
   useRouteLoaderData,
-  ScrollRestoration,
-  isRouteErrorResponse,
-  type ShouldRevalidateFunction,
 } from '@remix-run/react';
+import {Analytics, getShopAnalytics, useNonce} from '@shopify/hydrogen';
+import {defer, type LoaderFunctionArgs} from '@shopify/remix-oxygen';
+
 import favicon from '~/assets/favicon.svg';
-import resetStyles from '~/styles/reset.css?url';
-import appStyles from '~/styles/app.css?url';
 import {PageLayout} from '~/components/PageLayout';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
+import appStyles from '~/styles/app.css?url';
+import resetStyles from '~/styles/reset.css?url';
 
 export type RootLoader = typeof loader;
 

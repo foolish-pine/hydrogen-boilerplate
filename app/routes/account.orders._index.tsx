@@ -1,16 +1,17 @@
-import {Link, useLoaderData, type MetaFunction} from '@remix-run/react';
+import {Link, type MetaFunction, useLoaderData} from '@remix-run/react';
 import {
+  flattenConnection,
+  getPaginationVariables,
   Money,
   Pagination,
-  getPaginationVariables,
-  flattenConnection,
 } from '@shopify/hydrogen';
-import {json, redirect, type LoaderFunctionArgs} from '@shopify/remix-oxygen';
-import {CUSTOMER_ORDERS_QUERY} from '~/graphql/customer-account/CustomerOrdersQuery';
+import {json, type LoaderFunctionArgs, redirect} from '@shopify/remix-oxygen';
 import type {
   CustomerOrdersFragment,
   OrderItemFragment,
 } from 'customer-accountapi.generated';
+
+import {CUSTOMER_ORDERS_QUERY} from '~/graphql/customer-account/CustomerOrdersQuery';
 
 export const meta: MetaFunction = () => {
   return [{title: 'Orders'}];

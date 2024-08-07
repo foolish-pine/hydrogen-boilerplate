@@ -1,10 +1,10 @@
 import type {
-  PredictiveQueryFragment,
-  SearchProductFragment,
-  PredictiveProductFragment,
+  PredictiveArticleFragment,
   PredictiveCollectionFragment,
   PredictivePageFragment,
-  PredictiveArticleFragment,
+  PredictiveProductFragment,
+  PredictiveQueryFragment,
+  SearchProductFragment,
 } from 'storefrontapi.generated';
 
 export function applyTrackingParams(

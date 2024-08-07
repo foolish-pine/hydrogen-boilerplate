@@ -1,6 +1,6 @@
-import {useLoaderData, Link} from '@remix-run/react';
+import {Link, useLoaderData} from '@remix-run/react';
+import {getPaginationVariables, Image, Pagination} from '@shopify/hydrogen';
 import {defer, type LoaderFunctionArgs} from '@shopify/remix-oxygen';
-import {Pagination, getPaginationVariables, Image} from '@shopify/hydrogen';
 import type {CollectionFragment} from 'storefrontapi.generated';
 
 export async function loader(args: LoaderFunctionArgs) {

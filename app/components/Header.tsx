@@ -1,7 +1,8 @@
-import {Suspense} from 'react';
 import {Await, NavLink} from '@remix-run/react';
 import {type CartViewPayload, useAnalytics} from '@shopify/hydrogen';
-import type {HeaderQuery, CartApiQueryFragment} from 'storefrontapi.generated';
+import {Suspense} from 'react';
+import type {CartApiQueryFragment, HeaderQuery} from 'storefrontapi.generated';
+
 import {useAside} from '~/components/Aside';
 
 interface HeaderProps {

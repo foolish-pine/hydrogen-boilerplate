@@ -1,20 +1,20 @@
 import {
-  Link,
   Form,
-  useParams,
-  useFetcher,
   type FormProps,
+  Link,
+  useFetcher,
+  useParams,
 } from '@remix-run/react';
 import {Image, Money, Pagination} from '@shopify/hydrogen';
-import React, {useRef, useEffect} from 'react';
-import {applyTrackingParams} from '~/lib/search';
-
+import React, {useEffect, useRef} from 'react';
 import type {
-  PredictiveProductFragment,
-  PredictiveCollectionFragment,
   PredictiveArticleFragment,
+  PredictiveCollectionFragment,
+  PredictiveProductFragment,
   SearchQuery,
 } from 'storefrontapi.generated';
+
+import {applyTrackingParams} from '~/lib/search';
 
 import type {PredictiveSearchAPILoader} from '../routes/api.predictive-search';
 

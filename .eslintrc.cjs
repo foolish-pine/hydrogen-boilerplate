@@ -7,6 +7,7 @@ module.exports = {
     'plugin:hydrogen/recommended',
     'plugin:hydrogen/typescript',
   ],
+  plugins: ['simple-import-sort'],
   rules: {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/naming-convention': 'off',
@@ -15,5 +16,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
     'no-case-declarations': 'off',
     'no-console': ['warn', {allow: ['warn', 'error']}],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 };
