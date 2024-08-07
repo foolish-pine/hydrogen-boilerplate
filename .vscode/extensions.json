@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "graphql.vscode-graphql",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "svelte.svelte-vscode",
+    "vitest.explorer"
+  ],
+  "unwantedRecommendations": []
+}
