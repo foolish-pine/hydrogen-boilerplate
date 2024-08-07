@@ -1,8 +1,6 @@
 {
-  "name": "hydrogen-quickstart",
-  "private": true,
-  "sideEffects": false,
-  "version": "2024.7.3",
+  "name": "hydrogen-boilerplate",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build": "shopify hydrogen build --codegen",
